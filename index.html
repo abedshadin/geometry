@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="p-5">
+    <header>
+        <section>
+            <div class="bg-sky-200 flex h-20 rounded">
+                <div class="flex-1 p-2">
+                    <h1 class="text-3xl font-bold">Interactive</h1>
+                    <h4>Geometry Genious</h4>
+                </div>
+
+                <div class="flex pr-8">
+                    <button class="bg-sky-700 text-white mt-4 mb-4 pr-5 pl-5 rounded">Blog</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div  class="flex">
+            <section class="flex-auto grid mt-10 grid-cols-3 gap-4">
+                <div class="border-solid border-2 border-gray-100 large-rounded text-center ">
+                    <div class="p-5 h-52 relative inset-0 flex mb-5">
+                        <img src="images/triangle.png"  class="m-auto" alt="" srcset="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="font-bold text-2xl">Triangle</h1>
+                        <h4>Area (A) = 0.5 X b X h</h4>
+                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="b">cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="h">cm
+                    </div>
+                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                </div>
+    
+                <div class="  border-solid border-2 border-gray-100 large-rounded text-center ">
+                    <div class="p-5 h-52 relative inset-0 flex mb-5">
+                        <img src="images/rectangle.png" class="m-auto" alt="" srcset="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="font-bold text-2xl">Rectangle</h1>
+                        <h4>Area (A) = w X l</h4>
+                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="w">cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="l">cm
+                    </div>
+                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                </div>
+    
+    
+                <div class="  border-solid border-2 border-gray-100 large-rounded text-center ">
+                    <div class="p-5 h-52 relative inset-0 flex mb-5">
+                        <img src="images/parallelogram.png" class="m-auto" alt="" srcset="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="font-bold text-2xl">Parallelogram</h1>
+                        <h4>Area (A) = b X h</h4>
+                        <h3>b = <span>10</span>cm ,h = <span>12</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2"  type="text" >cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" >cm
+                    </div>
+                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                </div>
+    
+    
+                <div class="  border-solid border-2 border-gray-100 large-rounded text-center ">
+                    <div class="p-5 h-52 relative inset-0 flex mb-5">
+                        <img src="images/rhombus.png"  class="m-auto" alt="" srcset="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="font-bold text-2xl">Rhombus</h1>
+                        <h4>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub> </h4>
+                        <h3>d<sub>1</sub> = <span>16</span>cm , d<sub>1</sub> = <span><span>12</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="">cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="">cm
+                    </div>
+                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                </div>
+    
+                <div class="border-solid border-2 border-gray-100 large-rounded text-center ">
+                    <div class="p-5 h-52 relative inset-0 flex mb-5">
+                        <img src="images/pentagon.png" class="m-auto"  alt="" srcset="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="font-bold text-2xl">Pentagon</h1>
+                        <h4>Area (A) = 0.5 X p X b</h4>
+                        <h3>p = <span>6</span>cm ,b = <span>10</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="">cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="">cm
+                    </div>
+                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                </div>
+
+                <div class="border-solid border-2 border-gray-100 large-rounded text-center ">
+                    <div class="p-5 h-52 relative inset-0 flex mb-5">
+                        <img src="images/ellipse.png" class="m-auto" alt="" srcset="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="font-bold text-2xl">Ellipse</h1>
+                        <h4>Area (A) = &Pi;ab</h4>
+                        <h3>a = <span>10</span>cm ,b = <span>4</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="">cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="">cm
+                    </div>
+                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                </div>  
+            </section>
+
+            <section>        
+                <div class="ml-5 mt-10 flex-none border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div class="p-5">
+                    <img src="images/rectangle.png" alt="" srcset="">
+                </div>
+                <div class="mb-5">
+                    <h1></h1>
+                    <h4>Area (A) = w X l</h4>
+                    <input class="bg-gray-200 w-16 mr-2"  type="text">cm
+                    <input class="bg-gray-200 w-16 mr-2" type="text">cm
+                </div>
+                <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+            </div></section>
+        </div>
+
+
+    </main>
+
+</body>
+</html>
