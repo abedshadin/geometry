@@ -26,7 +26,7 @@
     <main>
         <div  class="flex">
             <section class="flex-auto grid mt-10 grid-cols-3 gap-4">
-                <div id="random" class="border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
                         <img src="images/triangle.png"  class="m-auto" alt="" srcset="">
                     </div>
@@ -39,7 +39,7 @@
                     <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
     
-                <div class="  border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
                         <img src="images/rectangle.png" class="m-auto" alt="" srcset="">
                     </div>
@@ -53,7 +53,7 @@
                 </div>
     
     
-                <div class="  border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
                         <img src="images/parallelogram.png" class="m-auto" alt="" srcset="">
                     </div>
@@ -68,7 +68,7 @@
                 </div>
     
     
-                <div class="  border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
                         <img src="images/rhombus.png"  class="m-auto" alt="" srcset="">
                     </div>
@@ -82,7 +82,7 @@
                     <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
     
-                <div class="border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
                         <img src="images/pentagon.png" class="m-auto"  alt="" srcset="">
                     </div>
@@ -96,7 +96,7 @@
                     <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
 
-                <div class="border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
                         <img src="images/ellipse.png" class="m-auto" alt="" srcset="">
                     </div>
@@ -126,5 +126,7 @@
 
 
 
+      <script src="js/app.js"></script>
+      <script src="js/hoverBg.js"></script>
 </body>
 </html>
