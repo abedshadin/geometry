@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
+
 <body class="p-5">
     <header>
         <section>
@@ -24,109 +27,125 @@
     </header>
 
     <main>
-        <div  class="flex">
+        <div class="flex">
             <section class="flex-auto grid mt-10 grid-cols-3 gap-4">
-                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+                    class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
-                        <img src="images/triangle.png"  class="m-auto" alt="" srcset="">
+                        <img src="images/triangle.png" class="m-auto" alt srcset>
                     </div>
                     <div class="mb-5">
                         <h1 class="font-bold text-2xl">Triangle</h1>
-                        <h4>Area (A) = 0.5 X b X h</h4>
-                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="b">cm
-                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="h">cm
+                        <h4>Area (A) = 0.5 X <span id="tTextB">b</span> X
+                            <span id="tTextH">h</span> </h4>
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="b" id="triangleBField">cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="h" id="triangleHField">cm
                     </div>
-                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                    <button id="triangle"
+                        class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
-    
-                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
+
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+                    class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
-                        <img src="images/rectangle.png" class="m-auto" alt="" srcset="">
+                        <img src="images/rectangle.png" class="m-auto" alt srcset>
                     </div>
                     <div class="mb-5">
                         <h1 class="font-bold text-2xl">Rectangle</h1>
-                        <h4>Area (A) = w X l</h4>
-                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="w">cm
-                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="l">cm
+                        <h4>Area (A) = <span id="rTextW">w</span> X <span id="rTextL">l</span></h4>
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="w" id="rectangleWField" >cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="l" id="rectangleLField">cm
                     </div>
-                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                    <button id="rectangle" class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
-    
-    
-                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
+
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+                    class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
-                        <img src="images/parallelogram.png" class="m-auto" alt="" srcset="">
+                        <img src="images/parallelogram.png" class="m-auto" alt srcset>
                     </div>
                     <div class="mb-5">
                         <h1 class="font-bold text-2xl">Parallelogram</h1>
                         <h4>Area (A) = b X h</h4>
-                        <h3>b = <span>10</span>cm ,h = <span>12</span>cm</h3>
-                        <input class="bg-gray-200 w-16 mr-2"  type="text" >cm
-                        <input class="bg-gray-200 w-16 mr-2" type="text" >cm
+                        <h3>b = <span  id="pTextB">10</span>cm ,h =
+                            <span id="pTextH">12</span>cm <button id="editPara"><i class="fas fa-edit"></i></button></h3>
+                            <div id="hidden" class="hidden">
+                                <input class="bg-gray-200 w-16 mr-2" type="text" id="paraBField">cm
+                                <input class="bg-gray-200 w-16 mr-2" type="text" id="paraHField">cm
+                            </div>
+                       
                     </div>
-                    <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
+                    <button id="parallelogram" class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
-    
-    
-                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
+
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+                    class=" random  border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
-                        <img src="images/rhombus.png"  class="m-auto" alt="" srcset="">
+                        <img src="images/rhombus.png" class="m-auto" alt srcset>
                     </div>
                     <div class="mb-5">
                         <h1 class="font-bold text-2xl">Rhombus</h1>
-                        <h4>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub> </h4>
-                        <h3>d<sub>1</sub> = <span>16</span>cm , d<sub>1</sub> = <span><span>12</span>cm</h3>
-                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="">cm
-                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="">cm
+                        <h4>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub>
+                        </h4>
+                        <h3>d<sub>1</sub> = <span>16</span>cm ,
+                            d<sub>1</sub> = <span><span>12</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder>cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder>cm
                     </div>
                     <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
-    
-                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
+
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+                    class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
-                        <img src="images/pentagon.png" class="m-auto"  alt="" srcset="">
+                        <img src="images/pentagon.png" class="m-auto" alt srcset>
                     </div>
                     <div class="mb-5">
                         <h1 class="font-bold text-2xl">Pentagon</h1>
                         <h4>Area (A) = 0.5 X p X b</h4>
-                        <h3>p = <span>6</span>cm ,b = <span>10</span>cm</h3>
-                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="">cm
-                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="">cm
+                        <h3>p = <span>6</span>cm ,b =
+                            <span>10</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder>cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder>cm
                     </div>
                     <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
                 </div>
 
-                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)" class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
+                <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+                    class=" random border-solid border-2 border-gray-100 large-rounded text-center ">
                     <div class="p-5 h-52 relative inset-0 flex mb-5">
-                        <img src="images/ellipse.png" class="m-auto" alt="" srcset="">
+                        <img src="images/ellipse.png" class="m-auto" alt srcset>
                     </div>
                     <div class="mb-5">
                         <h1 class="font-bold text-2xl">Ellipse</h1>
                         <h4>Area (A) = &Pi;ab</h4>
-                        <h3>a = <span>10</span>cm ,b = <span>4</span>cm</h3>
-                        <input class="bg-gray-200 w-16 mr-2"  type="text" placeholder="">cm
-                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder="">cm
+                        <h3>a = <span>10</span>cm ,b =
+                            <span>4</span>cm</h3>
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder>cm
+                        <input class="bg-gray-200 w-16 mr-2" type="text" placeholder>cm
                     </div>
                     <button class="bg-sky-700 text-white  mb-4 pr-20 pl-20 pt-3 pb-3 rounded">Calculate</button>
-                </div>  
+                </div>
             </section>
 
-            <section>        
+            <section>
                 <div class="ml-5 mt-10 flex-none border-solid border-2 border-gray-100 large-rounded text-center ">
 
-                <div class="mb-5 w-72">
-                   <h1 class="underline mt-2">Area Calculation</h1>
+                    <div class="mb-5 w-72">
+                        <h1 class="underline mt-2">Area Calculation</h1>
+                        <ol id="area-list" class="list-decimal" type="1">
+                        </ol>
+                    </div>
+
                 </div>
-
-            </div></section>
+            </section>
         </div>
-
 
     </main>
 
-
-
-      <script src="js/app.js"></script>
-      <script src="js/hoverBg.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/hoverBg.js"></script>
 </body>
+
 </html>
